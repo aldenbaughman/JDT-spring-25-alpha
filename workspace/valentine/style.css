@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    font-family: "Emilys Candy", Helvetica, sans-serif;
+    background-color: #fff8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: #7a0811;
+    /*rem scales the font for you */
+    font-size: 3rem;
+    margin-top: 0;
+}
+img{
+    height: 300px;
+    width: 100%;
+}
+p {
+    font-size: 1.2rem;
+}
+.card{
+    width: 340px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+button {
+    cursor: pointer;
+    width: 50%;
+    padding: 4px;
+    border: 1px solid #7a0811;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.1s;
+    width: 150px;
+}
+
+#yes{
+
+    background-color: lightgreen;
+
+  }
+#no{
+    background-color: lightcoral;
+}
+span{
+    color: red;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+#birds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#yes:hover{
+    transform: scale(2);
+    transition: transform 2s;
+}
+
+#no:hover{
+    transform: scale(.2);
+}
+
+.shake{
+    animation: shake 0.5s;
+}
+
+@keyframes shake{
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50%{
+        transfrom: translateX(10px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
